@@ -6,7 +6,9 @@ void addOne(int* ptr) {
 
 int main()
 {
-  int* p, i = 10;
+  int  i = 10;
+  int* p;
+
   p = &i;
   addOne(p);
 

@@ -1,6 +1,10 @@
 #include <stdio.h>
+
 int main() {
-  int i, x[6], sum = 0;
+  int i;
+  int x[6];
+  int sum = 0;
+
   printf("Enter 6 numbers: ");
   for(i = 0; i < 6; ++i) {
   // Equivalent to scanf("%d", &x[i]);
