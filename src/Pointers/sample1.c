@@ -3,7 +3,7 @@ int main()
 {
   int var = 1000;
   printf("var: %d\n", var);
-  printf("sizeof(var): %ld\n", sizeof(var));
+  printf("sizeof(var): %d\n", (int)sizeof(var));
 
   // Notice the use of & before var
   printf("address of var: %p  ", &var);  
