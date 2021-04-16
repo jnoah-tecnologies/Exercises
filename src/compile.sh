@@ -26,3 +26,4 @@ gcc -o Pointer_to_Pointer/sample1.out Pointer_to_Pointer/sample1.c
 
 # Function_Pointer
 gcc -o Function_Pointer/sample1.out Function_Pointer/sample1.c
+gcc -o Function_Pointer/sample2.out Function_Pointer/sample2.c

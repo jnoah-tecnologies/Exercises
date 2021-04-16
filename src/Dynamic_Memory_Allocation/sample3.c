@@ -11,7 +11,7 @@ int main()
 
     printf("Addresses of previously allocated memory: ");
     for(i = 0; i < n1; ++i)
-         printf("%u\n",ptr + i);
+         printf("%p\n",ptr + i);
 
     printf("\nEnter the new size: ");
     scanf("%d", &n2);
@@ -21,7 +21,7 @@ int main()
 
     printf("Addresses of newly allocated memory: ");
     for(i = 0; i < n2; ++i)
-         printf("%u\n", ptr + i);
+         printf("%p\n", ptr + i);
   
     free(ptr);
 
