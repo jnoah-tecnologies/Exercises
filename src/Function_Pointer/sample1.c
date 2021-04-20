@@ -11,7 +11,17 @@ int main()
      * statement like this: void (*fun_ptr)(int) = &fun;
      */
     int (*f2p) (int, int);
+
+    printf("main function address of : %p\n", main);
+    printf("sum function address of : %p\n", sum);
+    printf("\n");
+
     f2p = sum;
+    printf("f2p address of : %p\n", &f2p);
+    printf("sizeof(f2p) : %dByte\n", (int)sizeof(f2p));
+    printf("f2p function address of : %p\n", *f2p);
+    printf("\n");
+
     //Calling function using function pointer
     int op1 = f2p(10, 13);
 
@@ -20,6 +30,7 @@ int main()
 
     printf("Output1: Call using function pointer: %d",op1);
     printf("\nOutput2: Call using function name: %d\n", op2);
+    printf("\n");
 
     return 0;
 }

@@ -2,12 +2,18 @@
 int main()
 {
   int var = 1000;
-  printf("var: %d\n", var);
-  printf("sizeof(var): %d\n", (int)sizeof(var));
+
+  printf("sizeof(var): %dByte\n", (int)sizeof(var));
+  printf("\n");
+
+  printf("var: %d = 0x%X\n", var, var);
 
   // Notice the use of & before var
-  printf("address of var: %p  ", &var);  
-  printf("DATA: %02X %02X %02X %02X\n", 
-    *((unsigned char*)&var+0), *((unsigned char*)&var+1), *((unsigned char*)&var+2), *((unsigned char*)&var+3));
+  unsigned char* cvarp = (unsigned char*)&var;
+  printf("address of var: %p  DATA: %02X\n", &cvarp[0], cvarp[0]);  
+  printf("address of var: %p  DATA: %02X\n", &cvarp[1], cvarp[1]);  
+  printf("address of var: %p  DATA: %02X\n", &cvarp[2], cvarp[2]);  
+  printf("address of var: %p  DATA: %02X\n", &cvarp[3], cvarp[3]);  
+
   return 0;
 }

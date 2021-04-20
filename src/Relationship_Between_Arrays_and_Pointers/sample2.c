@@ -7,12 +7,16 @@ int main() {
 
   printf("Enter 6 numbers: ");
   for(i = 0; i < 6; ++i) {
-  // Equivalent to scanf("%d", &x[i]);
+      // Equivalent to scanf("%d", &x[i]);
       scanf("%d", x+i);
+  }
 
-  // Equivalent to sum += x[i]
+  for(i = 0; i < 6; ++i) {
+      // Equivalent to sum += x[i]
+      printf("Addres of (x+%d): %p  value of %d\n", i, x+i, *(x+i));
       sum += *(x+i);
   }
   printf("Sum = %d\n", sum);
+
   return 0;
 }

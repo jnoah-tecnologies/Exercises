@@ -44,7 +44,7 @@ int main() {
                 {div, 400, 25}
         };
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < sizeof(list) / sizeof(list[0]); i++) {
                 printf("%d %s %d = %d\n",
                         list[i].num1,
                         func_name(list[i].func),
