@@ -10,3 +10,8 @@ RUN apt clean
 RUN useradd --shell /bin/bash --home-dir /home/dev32 --create-home --system dev32
 RUN echo "dev32:dev32" | chpasswd
 
+WORKDIR /home/dev32
+
+# clone source
+RUN git clone https://github.com/jnoah-tecnologies/Exercises.git
+
