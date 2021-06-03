@@ -6,7 +6,7 @@
 
 // Memory dump
 void dump(void* address, int bytes) {
-	char* adr = address;
+	unsigned char* adr = address;
 	if (16 < bytes)
 		printf("Dump %dByte\n", bytes);
 	for (int i = 0; i < bytes; ++i) {

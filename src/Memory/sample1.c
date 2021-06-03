@@ -37,8 +37,8 @@ int main() {
 	printf("&g_dim[0] = %p\n", &g_dim);
 	printf("&g_str[0] = %p\n", &g_str);
 	printf("&g_pstr[0] = %p\n", &g_pstr);
-	dump(&g_dim, sizeof(&g_dim));
-	dump(&g_str, sizeof(&g_str));
+	dump(g_dim, sizeof(&g_dim));
+	dump(g_str, sizeof(&g_str));
 	dump(&g_pstr, sizeof(&g_pstr));
 	dump(g_pstr, strlen(g_pstr)+1);
     	printf("\n");
