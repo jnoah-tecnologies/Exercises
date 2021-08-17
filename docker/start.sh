@@ -1,0 +1,9 @@
+docker run -d --rm -p 8081:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8082:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8083:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8084:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8085:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8086:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8087:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8088:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
+docker run -d --rm -p 8089:8080 -it jnoahdevelop/dev32 ./bin/gotty --credential cr_rf:Q8GzRDkF4qAC7eY4 -w bash
