@@ -10,6 +10,8 @@ RUN apt clean
 RUN useradd --shell /bin/bash --home-dir /home/dev64 --create-home --system network
 RUN echo "network:network" | chpasswd
 
-WORKDIR /home/network
+WORKDIR /home/network/bin
+COPY gotty /home/dev32/bin/
 
+WORKDIR /home/network
 
