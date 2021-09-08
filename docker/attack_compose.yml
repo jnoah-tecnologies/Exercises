@@ -1,0 +1,38 @@
+version: '3'
+services:
+  dilibarr_container:
+    image: jnoahdevelop/dolibarr
+    command: tail -f /dev/null
+    networks:
+      victim_network:
+        ipv4_address: 10.254.249.101
+
+  dvwa_container:
+    image: jnoahdevelop/dvwa
+    command: tail -f /dev/null
+    networks:
+      victim_network:
+        ipv4_address: 10.254.249.102
+
+  telnetd_container:
+    image: jnoahdevelop/telnetd
+    networks:
+      victim_network:
+        ipv4_address: 10.254.249.103
+
+  user_container:
+    image: jnoahdevelop/attack
+    volumes:
+      - /dev/shm:/dev/shm
+    ports:
+      - "6080:80"
+    networks:
+      victim_network:
+
+networks:
+  victim_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.254.249.0/24
+
